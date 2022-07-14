@@ -8,13 +8,13 @@ import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
 
-contract Karbot is ERC20, ERC20Burnable, ERC20Snapshot, Ownable, Pausable {
+contract Krabots is ERC20, ERC20Burnable, ERC20Snapshot, Ownable, Pausable {
     
     using SafeMath for uint;
 
     uint256 private totalTokens;
 
-    constructor() ERC20("Karbot", "KRAC") {
+    constructor() ERC20("Krabots", "KRAC") {
         totalTokens = 100000000 * 10** decimals(); // 100M token
         _mint(owner(), totalTokens);  
     }
